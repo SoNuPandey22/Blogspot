@@ -1,7 +1,7 @@
 //entry file 
 const express = require('express')
 const app = express()
-const PORT = process.env || 5000
+const PORT = process.env.PORT || 5000
 const mongoose = require('mongoose')
 //password = 8csJPAUkXnRoUa8X
 const {MONGOURI} = require('./config/key')
