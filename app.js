@@ -4,7 +4,7 @@ const app = express()
 const PORT = process.env || 5000
 const mongoose = require('mongoose')
 //password = 8csJPAUkXnRoUa8X
-const {MONGOURI} = require('./key')
+const {MONGOURI} = require('./config/key')
 
 //connet app to the mongo uri
 mongoose.connect(MONGOURI,{
