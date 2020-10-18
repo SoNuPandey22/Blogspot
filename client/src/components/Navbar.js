@@ -1,4 +1,5 @@
 import React,{useContext,useRef,useEffect,useState} from 'react'
+import ReactNavbar from "react-responsive-animate-navbar"
 import {Link ,useHistory} from 'react-router-dom'
 import {UserContext} from '../App'
 import M from 'materialize-css'
@@ -14,6 +15,13 @@ const Navbar = ()=>{
    const [userDetails,setUserDetails] = useState([])
     const {state,dispatch} = useContext(UserContext)
     const history = useHistory()
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+
+    
 
     const renderList = ()=>{
        if(state){
@@ -59,13 +67,19 @@ const Navbar = ()=>{
    //************************ */
 
 	return (
-   <nav>
+  <div>
+   <nav >
      <div className="nav-wrapper white">
-     <Link to={state?"/":"/signin"} className="brand-logo left">BlogSpot</Link>
-       <ul id="nav-mobile" className="right">
+     <Link to={state?"/":"/signin"} className="brand-logo center btn-floating pulse">BlogSpot</Link>
+      
+         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+       <ul id="nav-mobile" className="right hide-on-med-and-down">
           {renderList()}    
           
        </ul>
+       
+
+       
      </div>
      <div id="modal1" className="modal" ref={searchModal} style={{color:"black"}}>
           <div className="modal-content">
@@ -90,6 +104,14 @@ const Navbar = ()=>{
           </div>
         </div>
   </nav>
+        <ul id="mobile-demo" className="sidenav">
+          
+          {renderList()}    
+          
+       </ul>
+  </div>
+
+  
         
 		)
 }

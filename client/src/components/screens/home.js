@@ -137,8 +137,8 @@ const deletePost = (postid)=>{
                 // console.log(item)
                  return (
                 
-                      <div className="card home-card " key={item._id}>
-                          <h5 style={{padding:"5px"}}><Link to={item.postedBy._id !== state._id?"/profile/"+item.postedBy._id :"/profile"  }>{item.postedBy.name}</Link> {item.postedBy._id == state._id 
+                      <div  className="card home-card " key={item._id}>
+                          <h5 className="#e8eaf6 indigo lighten-5" style={{padding:"5px"}}><Link to={item.postedBy._id !== state._id?"/profile/"+item.postedBy._id :"/profile"  }>{item.postedBy.name}</Link> {item.postedBy._id == state._id 
                             && <i className="material-icons" style={{
                                 float:"right"
                             }} 
@@ -148,11 +148,11 @@ const deletePost = (postid)=>{
                             }</h5>
                             <Collapsible trigger= {
                                 <div className="card-image">
-                                  <img style={{height:"400px"}} src ={item.photo} />
-                                  <h3 style={{width: "100%"}}className="card-title #c62828 red darken-3">{item.title} <h6 className="#0d47a1 blue darken-4">*click here read</h6></h3> 
+                                  <img className="responsive-img" style={{height:"200px"}} src ={item.photo} />
+                                  <h3 style={{width: "100%"}}className="card-title #1e88e5 blue darken-1 ">{item.title} <h6 className="#0d47a1 blue darken-4">*click here read</h6></h3> 
                                </div>
                             }>
-                                  <h6  className="#e0e0e0 grey lighten-2">{item.body}</h6>
+                                 <blockquote className="#e0e0e0 grey lighten-2 flow-text"> {item.body}</blockquote>
                             </Collapsible>
                             
                         
@@ -164,14 +164,14 @@ const deletePost = (postid)=>{
                                             onClick={()=>{unlikePost(item._id)}}
                                     >thumb_down</i>
                                     : 
-                                    <i className="material-icons"
+                                    <i className="material-icons btn-floating pulse"
                                     onClick={()=>{likePost(item._id)}}
                                     >thumb_up</i>
                                     }
                                     
                                 <h6>{item.likes.length} likes</h6>
                                
-                                <h5>Comments</h5>
+                                <h6>Reader's opinion</h6>
                                 {
                                     item.comments.map(record=>{
                                         return(
