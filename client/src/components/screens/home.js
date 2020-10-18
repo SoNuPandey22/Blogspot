@@ -148,7 +148,7 @@ const deletePost = (postid)=>{
                             }</h5>
                             <Collapsible trigger= {
                                 <div className="card-image">
-                                  <img className="responsive-img" style={{height:"200px"}} src ={item.photo} />
+                                  <img  style={{height:"250px"}} src ={item.photo} />
                                   <h3 style={{width: "100%"}}className="card-title #1e88e5 blue darken-1 ">{item.title} <h6 className="#0d47a1 blue darken-4">*click here read</h6></h3> 
                                </div>
                             }>
