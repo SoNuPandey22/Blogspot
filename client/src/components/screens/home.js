@@ -136,9 +136,11 @@ const deletePost = (postid)=>{
              data.map(item=>{
                 // console.log(item)
                  return (
+
+
                 
-                      <div  className="card home-card " key={item._id}>
-                          <h5 className="#e8eaf6 indigo lighten-5" style={{padding:"5px"}}><Link to={item.postedBy._id !== state._id?"/profile/"+item.postedBy._id :"/profile"  }>{item.postedBy.name}</Link> {item.postedBy._id == state._id 
+                      <div className="card  home-card " key={item._id}>
+                          <h5  style={{padding:"5px"}}><Link to={item.postedBy._id !== state._id?"/profile/"+item.postedBy._id :"/profile"  }>{item.postedBy.name}</Link> {item.postedBy._id == state._id 
                             && <i className="material-icons" style={{
                                 float:"right"
                             }} 
@@ -148,8 +150,12 @@ const deletePost = (postid)=>{
                             }</h5>
                             <Collapsible trigger= {
                                 <div className="card-image">
-                                  <img  style={{height:"250px"}} src ={item.photo} />
-                                  <h3 style={{width: "100%"}}className="card-title #1e88e5 blue darken-1 ">{item.title} <h6 className="#0d47a1 blue darken-4">*click here read</h6></h3> 
+                                  <img className="mainimg" style={{height:"350px"}} src ={item.photo} />
+                                  <div className="card-title">
+                                     <h3 style={{width: "100%"}}className="card-title #e53935 red darken-1 ">{item.title} <i class="material-icons">add_circle</i></h3> 
+                                     <p>*click here read</p>
+                                  </div> 
+                                  
                                </div>
                             }>
                                  <blockquote className="#e0e0e0 grey lighten-2 flow-text"> {item.body}</blockquote>

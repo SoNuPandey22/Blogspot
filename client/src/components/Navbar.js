@@ -27,8 +27,8 @@ const Navbar = ()=>{
        if(state){
           return [
             <li key="1"><i  data-target="modal1" className="large material-icons modal-trigger" style={{color:"black"}}>search</i></li>,
-            <li key="2"><Link to="/profile">Profile</Link></li>,
-            <li key="3"><Link to="/createPost">CreateBlog</Link></li>,
+            <li key="2"><Link to="/profile"><i className="material-icons">account_circle</i></Link></li>,
+            <li key="3"><Link to="/createPost"><i className="material-icons">add_a_photo</i></Link></li>,
             <li key="5">
              <button className="btn #c62828 red darken-3" onClick={()=>{
               localStorage.clear()
@@ -44,6 +44,32 @@ const Navbar = ()=>{
            return[
             <li key="6"><Link to="/login">Signin</Link></li>,
             <li key="7"><Link to="/signup">do not have account ?</Link></li>
+           ]
+       }
+    }
+
+    //***************************************/
+    const renderListnav = ()=>{
+       if(state){
+          return [
+            <li key="1"><i  data-target="modal1" className="material-icons modal-trigger" style={{color:"black"}}>search</i>search</li>,
+            <li key="2"><Link to="/profile"><i className="material-icons">account_circle</i></Link></li>,
+            <li key="3"><Link to="/createPost"><i className="material-icons">add_a_photo</i></Link></li>,
+            <li key="5">
+             <button className="btn #c62828 red darken-3" onClick={()=>{
+              localStorage.clear()
+              dispatch({type:"CLEAR"})
+              history.push('/login')
+            }}
+            >Logout
+            </button>
+            </li>
+          ]
+       }
+       else{
+           return[
+            <li key="6"><Link to="/login">Signin</Link></li>,
+            <li key="7"><Link to="/signup">Register</Link></li>
            ]
        }
     }
@@ -104,9 +130,9 @@ const Navbar = ()=>{
           </div>
         </div>
   </nav>
-        <ul id="mobile-demo" className="sidenav">
+        <ul style={{width:"200px"}} id="mobile-demo" className="sidenav #e1bee7 purple lighten-4">
           
-          {renderList()}    
+          {renderListnav()}    
           
        </ul>
   </div>
