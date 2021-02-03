@@ -1,2 +1,2 @@
-This Project is the made as minor project of academic part by a team of three member.
-This is a social platform where anyone can write blog for their community or friend circle.
+Social site is a place where you can share your thoughts with the world. 
+Here everyone can write their day stories with picture and can share it with the world.
