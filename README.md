@@ -4,15 +4,15 @@
 - - - -
 
 #Features :
- -[X] Signup
- -[X] Sigin
- -[ ] Change Profile Picture
- -[X] Create Post
- -[X] Delete Post
- -[X] Like
- -[X] comment
- -[ ] Delete Comments
- -[ ] Follow User
+ - [x] Signup
+ - [X] Sigin
+ - [ ] Change Profile Picture
+ - [X] Create Post
+ - [X] Delete Post
+ - [X] Like
+ - [X] comment
+ - [ ] Delete Comments
+ - [ ] Follow User
  
 - - - -
 [#PROJECT IS LIVE HERE](https://blogspotsas.herokuapp.com/)
