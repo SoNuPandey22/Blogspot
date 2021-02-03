@@ -4,18 +4,18 @@
 - - - -
 
 #Features :
- [x] Signup
- [x] Sigin
- [] Change Profile Picture
- [x] Create Post
- [x] Delete Post
- [x] Like
- [x] comment
- [] Delete Comments
- [] Follow User
+ [X] Signup
+ [X] Sigin
+ [ ] Change Profile Picture
+ [X] Create Post
+ [X] Delete Post
+ [X] Like
+ [X] comment
+ [ ] Delete Comments
+ [ ] Follow User
  
 - - - -
 [#PROJECT IS LIVE HERE](https://blogspotsas.herokuapp.com/)
 - - - -
-![log in](https://user-images.githubusercontent.com/47265105/106700000-f4a31780-6609-11eb-89f1-968cc752135c.jpeg "Screenshot of Login Page")
-![alt text](https://user-images.githubusercontent.com/47265105/106699958-ddfcc080-6609-11eb-8236-0e85a2331dce.jpeg "Screenshot of Homepage")
+![log in](https://user-images.githubusercontent.com/47265105/106705182-806d7180-6613-11eb-84fa-ff2ef906d6b1.jpeg "Profile page")
+![alt text](https://user-images.githubusercontent.com/47265105/106705190-84998f00-6613-11eb-9bc5-56bc08f3c7f8.jpeg "Screenshot of Homepage")
