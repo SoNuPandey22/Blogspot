@@ -3,7 +3,7 @@
 
 - - - -
 
-#Features :
+**Features** :
  - [x] Signup
  - [X] Sigin
  - [ ] Change Profile Picture
@@ -15,7 +15,7 @@
  - [ ] Follow User
  
 - - - -
-[#PROJECT IS LIVE HERE#](https://blogspotsas.herokuapp.com/)
+[**PROJECT IS LIVE HERE**](https://blogspotsas.herokuapp.com/)
 - - - -
 ![log in](https://user-images.githubusercontent.com/47265105/106705182-806d7180-6613-11eb-84fa-ff2ef906d6b1.jpeg "Profile page")
 ![alt text](https://user-images.githubusercontent.com/47265105/106705190-84998f00-6613-11eb-9bc5-56bc08f3c7f8.jpeg "Screenshot of Homepage")
